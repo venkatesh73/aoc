@@ -26,4 +26,4 @@ defmodule ExpenseReport do
   def calculate_report([], result), do: result
 end
 
-ExpenseReport.run() |> IO.inspect()
+IO.inspect(:timer.tc(ExpenseReport, :run, []))

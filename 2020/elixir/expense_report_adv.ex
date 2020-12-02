@@ -38,4 +38,4 @@ defmodule ExpenseReportAdv do
   def calculate_expense([], result), do: result
 end
 
-ExpenseReportAdv.run() |> IO.inspect()
+IO.inspect(:timer.tc(ExpenseReportAdv, :run, []))
