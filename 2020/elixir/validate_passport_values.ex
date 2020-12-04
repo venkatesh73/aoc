@@ -1,4 +1,4 @@
-defmodule ValidatePasswordValues do
+defmodule ValidatePassportValues do
   @required_fields ["byr", "iyr", "eyr", "hgt", "hcl", "ecl", "pid"]
 
   def parse_inputs() do
